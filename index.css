@@ -1,0 +1,180 @@
+/* body font family */
+@font-face {
+    font-family: Nunito;
+    src: url(./NunitoSans-Regular.ttf);
+}
+
+:root {
+    --width: 1100px;
+    --bg_Color: #EBEEF2;
+    --textBG_Color: #372865;
+    --heading_Color: #353252;
+    --Para_Color: #545454;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--bg_black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb {
+    background: #555;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+section,
+div,
+span {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+body {
+    margin: 0;
+    padding: 10px;
+
+    font-family: Nunito;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    background-color: var(--bg_Color);
+    border-radius: 10px;
+    padding: 0px 30px 20px 30px;
+}
+
+
+
+
+.naviagtion_bar {
+    width: var(--width);
+    max-width: 100%;
+    margin: 0 auto;
+
+    padding: 20px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Other_Links a {
+    color: var(--Para_Color);
+    text-decoration: none;
+}
+
+.Other_Links button {
+    background-color: var(--textBG_Color);
+    color: white;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+.page_Content {
+    width: var(--width);
+    max-width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_left span {
+    background-color: var(--textBG_Color);
+    color: hsl(0, 0%, 80%);
+    padding: 5px 20px;
+
+    border-radius: 20px;
+}
+
+.content_left span a {
+    color: hsl(0, 0%, 80%);
+}
+
+.content_left h1 {
+    font-size: 60px;
+    margin: 20px 0px;
+    color: var(--heading_Color);
+}
+
+.content_left p {
+    color: var(--Para_Color);
+    font-size: 18px;
+}
+
+.join_Offer {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+.join_Offer input {
+    width: 300px;
+    border: 0;
+    margin: 0 10px 0 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.join_Offer button {
+    background-color: var(--textBG_Color);
+    color: white;
+    border: 0;
+    padding: 10px 25px;
+    border-radius: 5px;
+}
+
+.content_right img {
+    width: 350px;
+}
+
+
+
+
+
+
+
+.Footer {
+    width: var(--width);
+    max-width: 100%;
+    margin: 30px auto 0px auto;
+}
+
+.Footer p {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--Para_Color);
+    margin-bottom: 20px;
+}
+
+.company_Icons svg {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin-right: 10px;
+}
